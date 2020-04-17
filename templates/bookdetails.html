@@ -1,0 +1,86 @@
+{%extends "layout.html"%}
+
+{%block heading%}
+{%endblock%}
+{%block body%}
+<div class="header">
+    <h1>Details for -  {{book_name}}</h1>
+    <h2><a href="{{url_for('index')}}"> Logout</a></h2>
+</div>
+{%if(book_name == 'A Brief History Of Time')%}
+<div class="row">
+    <div class="col-6 col-s-9">
+        <h1>Brief introduction</h1>
+
+        <p>In Stephen Hawking's landmark #1 New York Times bestseller- now updated with a new introduction and six short essays on current science - One of today's
+        greatest scientific minds explores such profound questions as: How did universe begin- and what made it possible? Does time always flow forward? Is the universe unending etc..
+            <a href="{{url_for('more', book_name='A Brief History Of Time')}}">more</a></p>
+    </div>
+
+    <div class="col-3 col-s-12">
+        <div class="aside">
+            <h2>Title</h2>
+            <p>A BRIEF HISTORY OF TIME</p>
+            <h2>Author</h2>
+            <p>Stephen Hawking</p>
+            <h2>Publisher</h2>
+            <p>Bantam books, New york</p>
+            <h2>Image</h2>
+            <img src="{{ url_for('static', filename='images/briefhistoryoftime.jpg') }}" width="183" height="275">
+        </div>
+    </div>
+</div>
+{%elif(book_name == 'The Moor''s last sigh')%}
+<div class="row">
+    <div class="col-6 col-s-9">
+        <h1>Brief introduction</h1>
+
+        <p>Morates 'Moor' Zogoiby is the last in line of a croocked and fantastical dynasty of spice merchants and crime lords from cochin. He is also compulsive
+        storyteller and an exile. As we travel with him on a route that takes him from India to Spain, he spins his labyrinthine family tale of mad passions and volcanic family hatreds, of titanic
+        matriarchs and their mesmerised offspring, of premature deaths and curses that strike beyond grave...<a href="{{url_for('more', book_name='The Moor''s last sigh')}}">more</a></p>
+    </div>
+
+    <div class="col-3 col-s-12">
+        <div class="aside">
+            <h2>Title</h2>
+            <p>THE MOOR'S LAST SIGH</p>
+            <h2>Author</h2>
+            <p>Salman Rushdie</p>
+            <h2>Publisher</h2>
+            <p>Vintage Books, London</p>
+            <h2>Image</h2>
+            <img src="{{ url_for('static', filename='images/moorslastsigh.jpg') }}" width="183" height="275">
+        </div>
+    </div>
+</div>
+{%elif(book_name == 'Monk who sold his ferrari')%}
+<div class="row">
+    <div class="col-6 col-s-9">
+        <h1>Brief introduction</h1>
+
+        <p>The Monk Who Sold His Ferrari is a self-help classic telling the story of fictional lawyer Julian Mantle, who sold his mansion and Ferrari to study the seven virtues of the Sages of Sivana in the Himalayan mountains...
+            <a href="{{url_for('more', book_name='Monk who sold his ferrari')}}">more</a></p>
+    </div>
+
+    <div class="col-3 col-s-12">
+        <div class="aside">
+            <h2>Title</h2>
+            <p>MONK WHO SOLD HIS FERRARI</p>
+            <h2>Author</h2>
+            <p>Robin Sharma</p>
+            <h2>Publisher</h2>
+            <p>Harper Collins Publishers</p>
+            <h2>Image</h2>
+            <img src="{{ url_for('static', filename='images/monkwhosoldhisferrari.jpg') }}" width="183" height="275">
+        </div>
+    </div>
+</div>
+{%endif%}
+<h2><a href="{{url_for('list')}}">Back</a></h2>
+
+{%endblock%}
+{%block footer%}
+<div class="footer">
+    <p>Copyright Book exchange. Developed by Biju krishna</p>
+</div>
+{%endblock%}

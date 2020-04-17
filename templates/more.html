@@ -1,0 +1,140 @@
+{%extends "layout.html"%}
+{%block heading%}
+
+{%endblock%}
+{%block body%}
+<div class="header">
+    <h1>More details about {{book_name}}</h1>
+    <h2><a href="{{url_for('index')}}"> Logout</a></h2>
+</div>
+{%if(book_name == 'A Brief History Of Time')%}
+<div class="row">
+    <div class="col-6 col-s-9">
+        <h1>Brief introduction</h1>
+
+        <p>
+            FOREWARD
+            I didn’t write a foreword to the original edition of A Brief History of Time. That was done by Carl Sagan. Instead,
+            I wrote a short piece titled “Acknowledgments” in which I was advised to thank everyone. Some of the
+            foundations that had given me support weren’t too pleased to have been mentioned, however, because it led to
+            a great increase in applications.
+            I don’t think anyone, my publishers, my agent, or myself, expected the book to do anything like as well as it did.
+            It was in the London Sunday Times best-seller list for 237 weeks, longer than any other book (apparently, the
+            Bible and Shakespeare aren’t counted). It has been translated into something like forty languages and has sold
+            about one copy for every 750 men, women, and children in the world. As Nathan Myhrvold of Microsoft (a
+            former post-doc of mine) remarked: I have sold more books on physics than Madonna has on sex.
+            The success of A Brief History indicates that there is widespread interest in the big questions like: Where did
+            we come from? And why is the universe the way it is?
+            I have taken the opportunity to update the book and include new theoretical and observational results obtained
+            since the book was first published (on April Fools’ Day, 1988). I have included a new chapter on wormholes
+            and time travel. Einstein’s General Theory of Relativity seems to offer the possibility that we could create and
+            maintain wormholes, little tubes that connect different regions of space-time. If so, we might be able to use
+            them for rapid travel around the galaxy or travel back in time. Of course, we have not seen anyone from the
+            future (or have we?) but I discuss a possible explanation for this.
+            I also describe the progress that has been made recently in finding “dualities” or correspondences between
+            apparently different theories of physics. These correspondences are a strong indication that there is a complete
+            unified theory of physics, but they also suggest that it may not be possible to express this theory in a single
+            fundamental formulation. Instead, we may have to use different reflections of the underlying theory in different
+            situations. It might be like our being unable to represent the surface of the earth on a single map and having to
+            use different maps in different regions. This would be a revolution in our view of the unification of the laws of
+            science but it would not change the most important point: that the universe is governed by a set of rational laws
+            that we can discover and understand.
+            On the observational side, by far the most important development has been the measurement of fluctuations in
+            the cosmic microwave background radiation by COBE (the Cosmic Background Explorer satellite) and other
+            collaborations. These fluctuations are the finger-prints of creation, tiny initial irregularities in the otherwise
+            smooth and uniform early universe that later grew into galaxies, stars, and all the structures we see around us.
+            Their form agrees with the predictions of the proposal that the universe has no boundaries or edges in the
+            imaginary time direction; but further observations will be necessary to distinguish this proposal from other
+            possible explanations for the fluctuations in the background. However, within a few years we should know
+            whether we can believe that we live in a universe that is completely self-contained and without beginning or
+            end.
+
+
+        </p>
+    </div>
+
+</div>
+{%elif(book_name == 'The Moor''s last sigh')%}
+<div class="row">
+    <div class="col-6 col-s-9">
+        <h1>Brief introduction</h1>
+
+        <p>TIME Magazine’s Best Book of the Year
+
+            “Fierce, phantasmagorical…a huge, sprawling, exuberant novel.” The New York Times
+
+            “Rushdie, the author of nine previous books—including The Satanic Verses, which prompted Ayatollah Khomeini to issue his death sentence in 1989—alludes often to his own exile, the story of modern India and the dangers of art. At first the hyperbole, didactic asides, verbal puns, lyrical and lewd jokes, and slapstick routines seem a bit much, but if you stick with it, a cumulative magic takes hold. Rushdie’s satiric, hysterically funny, political family tragedy is a masterpiece.” Salon
+
+            “Salman Rushdie’s greatest novel…held me is its thrall and provided the richest fictional experience of 1995.” The Sunday Times
+
+            “The most complete and gratifying work to emerge from Salman Rushdie’s imagination…. The Moor’s Last Sigh is an exotic story, in its setting, in its characters, in its punning extravagance, and in its deeply human core. It is an extraordinary family saga…full of wonderful characters, and the insight born of genuine reflection…A remarkable spell of creativity.” The Edmonton Journal
+        </p>
+    </div>
+
+
+</div>
+{%elif(book_name == 'Monk who sold his ferrari')%}
+<div class="row">
+    <div class="col-6 col-s-9">
+        <h1>Brief introduction</h1>
+
+        <p>He collapsed right in the middle of a packed courtroom. He was
+            one of this country’s most distinguished trial lawyers. He was also
+            a man who was as well known for the three-thousand-dollar Italian
+            suits that draped his well-fed frame as for his remarkable string of
+            legal victories. I simply stood there, paralyzed by the shock of
+            what I had just witnessed. The great Julian Mantle had been
+            reduced to a victim and was now squirming on the ground like a
+            helpless infant, shaking and shivering and sweating like a maniac.
+            Everything seemed to move in slow motion from that point on.
+            “My God, Julian’s in trouble!” his paralegal screamed, emotionally
+            offering us a blinding glimpse of the obvious. The judge looked
+            panic-stricken and quickly muttered something into the private
+            phone she had had installed in the event of an emergency. As for
+            me, I could only stand there, dazed and confused. Please don’t die,
+            you old fool. It’s too early for you to check out. You don’t deserve
+            to die like this.
+            The bailiff, who earlier had looked as if he had been embalmed
+            in his standing position, leapt into action and started to perform
+            CPR on the fallen legal hero. The paralegal was at his side, her
+            long blond curls dangling over Julian’s ruby-red face, offering him
+            soft words of comfort, words that he obviously could not hear.
+            I had known Julian for seventeen years. We had first met when
+            I was a young law student hired by one of his partners as a summer
+            research intern. Back then, he’d had it all. He was a brilliant, handsome and fearless trial attorney with dreams of greatness. Julian
+            was the firm’s young star, the rain-maker in waiting. I can still
+            remember walking by his regal corner office while I was working
+            late one night and stealing a glimpse of the framed quotation
+            perched on his massive oak desk. It was by Winston Churchill and
+            it spoke volumes about the man that Julian was:
+            Sure I am that this day we are masters of our fate, that the
+            task which has been set before us is not above our strength;
+            that its pangs and toils are not beyond my endurance. As
+            long as we have faith in our own cause and an unconquerable will to win, victory will not be denied us.
+            Julian also walked his talk. He was tough, hard-driving and
+            willing to work eighteen-hour days for the success he believed was
+            his destiny. I heard through the grapevine that his grandfather
+            had been a prominent senator and his father a highly respected
+            judge of the Federal Court. It was obvious that he came from
+            money and that there were enormous expectations weighing on his
+            Armani-clad shoulders. I’ll admit one thing though: he ran his own
+            race. He was determined to do things his own way — and he loved
+            to put on a show.
+            Julian’s outrageous courtroom theatri</p>
+    </div>
+
+
+    </div>
+</div>
+{%endif%}
+
+<h2><a href="{{url_for('bookdetails', book_name=book_name)}}">Back</a></h2>
+
+
+{%endblock%}
+
+{%block footer%}
+<div class="footer">
+    <p>Copyright Book exchange. Developed by Biju krishna</p>
+</div>
+{%endblock%}

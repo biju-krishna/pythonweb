@@ -1,0 +1,28 @@
+{%extends "layout.html"%}
+
+{%block heading%}
+{%endblock%}
+{%block body%}
+<div class="header">
+    <h1>Login</h1>
+</div>
+
+<div class="row">
+    <div class="col-3 col-s-3 menu">
+        <form action="{{url_for('login')}}" method="post">
+            <input type="text" name="user_name" placeholder="Enter name">
+            <input type="password" name="password" placeholder="Enter password">
+            <button>Submit</button>
+        </form>
+    </div>
+</div>
+
+
+
+{%endblock%}
+
+{%block footer%}
+<div class="footer">
+    <p>Copyright Book exchange. Developed by Biju krishna</p>
+</div>
+{%endblock%}

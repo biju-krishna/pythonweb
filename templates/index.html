@@ -1,0 +1,27 @@
+{%extends "layout.html"%}
+
+{%block heading%}
+{%endblock%}
+{%block body%}
+<div class="header">
+    <h1>List Of Books</h1>
+    <h2><a href="{{url_for('index')}}"> Logout</a></h2>
+</div>
+
+<div class="row">
+    <div class="col-3 col-s-3 menu">
+        <ol>
+            <li><a href="{{url_for('bookdetails', book_name='A Brief History Of Time')}}"> A Brief History Of Time</a></li>
+            <li><a href="{{url_for('bookdetails', book_name='The Moor''s last sigh')}}">The Moor's last sigh</a></li>
+            <li><a href="{{url_for('bookdetails', book_name='Monk who sold his ferrari')}}">Monk who sold his ferrari</a></li>
+        </ol>
+    </div>
+</div>
+
+
+{%endblock%}
+{%block footer%}
+<div class="footer">
+    <p>Copyright Book exchange. Developed by Biju krishna</p>
+</div>
+{%endblock%}
